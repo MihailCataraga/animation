@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+</head>
+<style>
+    body {
+        background-color: #050210;
+    }
+    div {
+        margin: 200px auto;
+    }
+    #a0 {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        bottom: 1150px;
+        left: 0px;
+        border-radius: 100%;
+        background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+        z-index: 0;
+        animation-name: a1;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        filter: blur(80px);
+    }
+    #a1 {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        border-radius: 100%;
+        background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+        animation-name: a1;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        z-index: 1;
+    }
+    #a2 {
+        width: 350px;
+        height: 350px;
+        position: relative;
+        bottom: 575px;
+        left: 0px;
+        z-index: 1;
+        background-color: #050210;
+        border-radius: 100%;
+        animation-name: a2;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes a1 {
+        0% {
+            transform: rotate(0deg);
+        }
+        10% {
+            transform: rotate(36deg);
+        }
+        20% {
+            transform: rotate(72deg);
+        }
+        30% {
+            transform: rotate(108deg);
+        }
+        40% {
+            transform: rotate(144deg);
+        }
+        50% {
+            transform: rotate(180deg);
+        }
+        60% {
+            transform: rotate(216deg);
+        }
+        70% {
+            transform: rotate(252deg);
+        }
+        80% {
+            transform: rotate(288deg);
+        }
+        90% {
+            transform: rotate(324deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes a2 {
+        0% {
+            background: radial-gradient(#130b2f 0px, #0e0723 10px, #0e0723 145px, #050210 155px);
+        }
+        5% {
+            background: radial-gradient(#130b2f 7px, #0e0723 17px, #0e0723 146px, #050210 156px);
+        }
+        10% {
+            background: radial-gradient(#130b2f 14px, #0e0723 24px, #0e0723 148px, #050210 158px);
+        }
+        15% {
+            background: radial-gradient(#130b2f 22px, #0e0723 32px, #0e0723 149px, #050210 159px);
+        }
+        20% {
+            background: radial-gradient(#130b2f 29px, #0e0723 29px, #0e0723 151px, #050210 161px);
+        }
+        25% {
+            background: radial-gradient(#130b2f 36px, #0e0723 46px, #0e0723 152px, #050210 162px);
+        }
+        30% {
+            background: radial-gradient(#130b2f 43px, #0e0723 53px, #0e0723 154px, #050210 164px);
+        }
+        35% {
+            background: radial-gradient(#130b2f 51px, #0e0723 61px, #0e0723 155px, #050210 165px);
+        }
+        40% {
+            background: radial-gradient(#130b2f 58px, #0e0723 68px, #0e0723 157px, #050210 167px);
+        }
+        45% {
+            background: radial-gradient(#130b2f 65px, #0e0723 75px, #0e0723 158px, #050210 168px);
+        }
+        50% {
+            background: radial-gradient(#130b2f 72px, #0e0723 82px, #0e0723 160px, #050210 170px);
+        }
+        55% {
+            background: radial-gradient(#130b2f 80px, #0e0723 90px, #0e0723 161px, #050210 171px);
+        }
+        60% {
+            background: radial-gradient(#130b2f 87px, #0e0723 97px, #0e0723 163px, #050210 173px);
+        }
+        65% {
+            background: radial-gradient(#130b2f 94px, #0e0723 104px, #0e0723 164px, #050210 174px);
+        }
+        70% {
+            background: radial-gradient(#130b2f 101px, #0e0723 111px, #0e0723 166px, #050210 175px);
+        }
+        75% {
+            background: radial-gradient(#130b2f 109px, #0e0723 119px, #0e0723 167px, #050210 175px);
+        }
+        80% {
+            background: radial-gradient(#130b2f 116px, #0e0723 126px, #0e0723 169px, #050210 175px);
+        }
+        85% {
+            background: radial-gradient(#130b2f 123px, #0e0723 133px, #0e0723 170px, #050210 175px);
+        }
+        90% {
+            background: radial-gradient(#130b2f 130px, #0e0723 140px, #0e0723 172px, #050210 175px);
+        }
+        95% {
+            background: radial-gradient(#130b2f 138px, #0e0723 148px, #0e0723 173px, #050210 175px);
+        }
+        100% {
+            background: radial-gradient(#130b2f 145px, #0e0723 155px, #0e0723 175px);
+        }
+    }
+</style>
+<body>
+    <div id="a1"></div>
+    <div id="a2"></div>
+    <div id="a0"></div>
+</body>
+</html>
